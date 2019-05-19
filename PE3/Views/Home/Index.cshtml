@@ -1,0 +1,25 @@
+﻿<div class="container">
+	<h2>Welkom</h2>
+	<h3>@ViewBag.Message</h3>
+
+	<form asp-action="controleerGegevens">
+		<div class="form-group">
+			<label for="uname">Username:</label>
+			<input type="text" class="form-control" id="username" placeholder="Enter username" name="username" required>
+			<div class="valid-feedback">Valid.</div>
+			<div class="invalid-feedback">Please fill out this field.</div>
+		</div>
+		<div class="form-group">
+			<label for="pwd">Password:</label>
+			<input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
+			<div class="valid-feedback">Valid.</div>
+			<div class="invalid-feedback">Please fill out this field.</div>
+		</div>
+		
+		<button type="submit" class="btn btn-primary" name="loginBtn">Aanmelden</button>
+	</form>
+	<br />
+	<a class="btn btn-primary" href="/home/addteacher">Maak account</a>
+</div>
+
+
