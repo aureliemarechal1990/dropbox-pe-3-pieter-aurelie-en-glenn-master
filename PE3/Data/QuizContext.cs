@@ -24,9 +24,11 @@ namespace PE3.Data
         { 
             PupilSeeder.Seed(modelBuilder);
             TeacherSeeder.Seed(modelBuilder);
-			QuestionSeeder.Seed(modelBuilder);
+            ClassRoomSeeder.Seed(modelBuilder);
+;			QuestionSeeder.Seed(modelBuilder);
             base.OnModelCreating(modelBuilder);
-        }    
+        }
+    
         
         
     }
